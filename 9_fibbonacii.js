@@ -11,12 +11,15 @@
 
 function fibbonacii(a, b, upto) {
     let first = a, second = b, next;
+    let fibbNos = [];
     for (i = 1; i <= upto; i++) {
-        console.log(first);
+        fibbNos.push(first);
         next = first + second;
         first = second;
         second = next;
     }
+    console.log("Fibbo sequence are :", ...fibbNos.join(','));
+
 }
 fibbonacii(0, 1, 6)
 
