@@ -1,10 +1,11 @@
+let a = 20,
+    b = 5;
 
-let arr = [1, 2, 3, 4, 5];
+function divide(a, b) {
+    if (b == 0) {
+        throw 'Division by zero';
+    }
+    return a / b;
+}
 
-let mySet = [...new Set(arr)];
-console.log(mySet);
-console.log(Array.isArray(mySet));
-
-
-
-
+console.log(divide(a, b));
