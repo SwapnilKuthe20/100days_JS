@@ -17,4 +17,4 @@ function armstrong(num) {
     console.log(totalArmstrong);
 }
 
-armstrong(153);
+armstrong(174);
